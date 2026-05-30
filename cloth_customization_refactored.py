@@ -1,8 +1,8 @@
 """
 의류 추천 시스템 Streamlit 앱
 
-사용자가 업로드한 의류 이미지와 상황, 카테고리를 바탕으로
-트렌디한 스타일을 추천해주는 애플리케이션
+사용자가 업로드한 의류 이미지와 TPO·카테고리를 바탕으로
+유사 스타일·상품을 추천하는 웹 애플리케이션이다.
 """
 
 import streamlit as st
@@ -332,7 +332,7 @@ def main():
             st.caption(f"**상품명**: {product_name}")
             st.caption(f"**가격**: {price}")
     else:
-        st.error("상품 이미지를 찾을 수 없습니다.")
+        st.error("상품 이미지를 찾을 수 없다.")
 
 
 if __name__ == "__main__":

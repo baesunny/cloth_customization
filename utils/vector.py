@@ -13,8 +13,8 @@ def image_to_vector(image, resize_size=IMAGE_RESIZE_SIZE):
     """
     이미지를 1D 벡터로 변환
     
-    이미지를 고정된 크기로 리사이징한 후 1D 배열로 변환하여
-    유사도 계산에 사용할 수 있는 벡터로 변환합니다.
+    이미지를 고정 크기로 리사이즈한 뒤 1D 배열로 변환하여
+    유사도 계산에 사용할 수 있는 벡터로 만든다.
     
     Args:
         image (PIL.Image or np.ndarray): 입력 이미지

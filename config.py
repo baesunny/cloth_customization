@@ -1,7 +1,7 @@
 """
-Configuration and Constants for Cloth Customization System
+의류 추천 시스템 설정 모듈
 
-세그멘테이션 마스크 인덱스, 카테고리 매핑, 경로 설정 등을 중앙화
+세그멘테이션 마스크 인덱스, 카테고리 매핑, 경로 설정 등을 중앙에서 관리한다.
 """
 
 # ============================================================================
@@ -41,25 +41,25 @@ SEGMENTATION_INDICES = {
 # 카테고리별 데이터베이스 파일 매핑
 # ============================================================================
 CSV_FILES = {
-    'top': 'top.csv',
-    'bottom': 'bottom.csv',
-    'shoes': 'shoes.csv',
-    'acc': 'acc.csv'
+    'top': 'data/top.csv',
+    'bottom': 'data/bottom.csv',
+    'shoes': 'data/shoes.csv',
+    'acc': 'data/acc.csv',
 }
 
 CSV_NAME_FILES = {
-    'top': 'top_name.csv',
-    'bottom': 'bottom_name.csv',
-    'shoes': 'shoes_name.csv',
-    'acc': 'acc_name.csv'
+    'top': 'data/top_name.csv',
+    'bottom': 'data/bottom_name.csv',
+    'shoes': 'data/shoes_name.csv',
+    'acc': 'data/acc_name.csv',
 }
 
 # ============================================================================
 # 경로 설정
 # ============================================================================
-STYLE_IMAGE_PATH = './style/{situation}/{category}/'  # 스타일 이미지 폴더
-PRODUCT_IMAGE_PATH = './product/{category}/'           # 상품 이미지 벡터 폴더
-PRODUCT_IMG_PATH = './product/img/'                    # 상품 실제 이미지 폴더
+STYLE_IMAGE_PATH = './data/style/{situation}/{category}/'  # TPO·카테고리별 스타일 벡터
+PRODUCT_IMAGE_PATH = './data/product/{category}/'          # 카테고리별 상품 벡터
+PRODUCT_IMG_PATH = './data/product/img/'                   # 상품 썸네일 이미지
 INTRO_IMAGE_PATH = './intro_img/'                      # 소개 이미지
 
 # ============================================================================
