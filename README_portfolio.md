@@ -365,50 +365,6 @@ streamlit run cloth_customization_refactored.py
 
 ---
 
-## 📄 라이선스
-
-MIT License - 자유롭게 사용, 수정, 배포 가능합니다.
-
-자세한 내용은 [LICENSE](LICENSE) 참조
-
----
-
-## 📞 문제 해결
-
-### GPU 없을 때 실행
-
-```python
-# config.py 또는 코드에서
-import torch
-device = torch.device('cpu')  # GPU 대신 CPU 사용
-```
-
-### 모델 다운로드 오류
-
-```bash
-# Hugging Face 모델 캐시 초기화
-rm -rf ~/.cache/huggingface/hub/*
-pip install -U transformers
-```
-
-### Streamlit 포트 변경
-
-```bash
-streamlit run app.py --server.port 8502
-```
-
----
-
-## 📝 참고 자료
-
-- [Streamlit 공식 문서](https://docs.streamlit.io/)
-- [Hugging Face Transformers](https://huggingface.co/docs/transformers)
-- [PyTorch 공식 문서](https://pytorch.org/docs)
-- [Segformer 논문](https://arxiv.org/abs/2105.15203)
-- [DETR 논문](https://arxiv.org/abs/2005.12138)
-
----
-
 **Last Updated**: 2026-05-30  
 **Version**: 2.0.0 (Refactored)  
 **Status**: 🚀 Production Ready
